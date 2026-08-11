@@ -193,6 +193,50 @@ body {
     padding-top: 100px;
 }
 
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-text { min-width: 0; }
+
+/* Hero Image */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease 0.3s backwards;
+}
+
+.hero-image-frame {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 4 / 5;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: var(--shadow-glow), 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+.hero-image-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, transparent 55%, rgba(15, 23, 42, 0.55) 100%);
+    pointer-events: none;
+}
+
+.hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
 .hero-greeting {
     font-size: 1.2rem;
     color: var(--accent-cyan);
@@ -648,6 +692,9 @@ body {
         transition: 0.3s;
     }
     .nav-menu.active { left: 0; }
+    .hero-container { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-image { order: -1; }
+    .hero-image-frame { max-width: 300px; }
     .hero-name { font-size: 4rem; }
     .hero-stats { grid-template-columns: 1fr; }
     .work-grid { grid-template-columns: 1fr; }
@@ -671,6 +718,9 @@ body {
     margin: 0 auto;
 }
 .experience-item {
+    display: flex;
+    gap: 1.75rem;
+    align-items: flex-start;
     padding: 2.5rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(6, 182, 212, 0.2);
@@ -681,6 +731,24 @@ body {
 .experience-item:hover {
     border-color: rgba(6, 182, 212, 0.5);
     transform: translateY(-4px);
+}
+.experience-body { flex: 1; min-width: 0; }
+.experience-logo {
+    flex-shrink: 0;
+    width: 76px;
+    height: 76px;
+    border-radius: 16px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+.experience-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 .experience-header {
     display: flex;

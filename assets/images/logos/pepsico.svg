@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" role="img" aria-label="PepsiCo">
+  <defs>
+    <clipPath id="pepsiGlobe"><circle cx="44" cy="44" r="40"/></clipPath>
+  </defs>
+  <g clip-path="url(#pepsiGlobe)">
+    <rect x="0" y="0" width="88" height="88" fill="#004B93"/>
+    <path d="M-4,44 C20,26 36,60 60,48 C78,39 88,48 92,44 L92,-4 L-4,-4 Z" fill="#EE2536"/>
+    <path d="M-4,44 C20,26 36,60 60,48 C78,39 88,48 92,44 L92,55 C88,59 78,50 60,59 C36,71 20,37 -4,55 Z" fill="#FFFFFF"/>
+  </g>
+  <circle cx="44" cy="44" r="41.5" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="98" y="56" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700" fill="#0A2A66">Pepsi<tspan fill="#EE2536">Co</tspan></text>
+</svg>

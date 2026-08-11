@@ -84,6 +84,18 @@ async function loadHero() {
             ).join('');
         }
 
+        // Handle hero image
+        const imageElement = document.getElementById('hero-image');
+        if (imageElement) {
+            const avatar = data.avatarUrl || data.image || '';
+            if (avatar) {
+                imageElement.innerHTML =
+                    `<div class="hero-image-frame"><img src="${avatar}" alt="${name}" loading="eager"></div>`;
+            } else {
+                imageElement.style.display = 'none';
+            }
+        }
+
         const socialElement = document.getElementById('hero-social');
         if (socialElement && data.socialLinks) {
             socialElement.innerHTML = data.socialLinks.map(link =>
@@ -137,8 +149,13 @@ async function loadExperience() {
         container.innerHTML = jobs.map(job => {
             const points = Array.isArray(job.responsibilities) ? job.responsibilities : [];
             const tech = Array.isArray(job.technologies) ? job.technologies : [];
+            const logo = job.logo
+                ? `<div class="experience-logo"><img src="${job.logo}" alt="${job.company || ''} logo" loading="lazy"></div>`
+                : '';
             return `
             <article class="experience-item">
+                ${logo}
+                <div class="experience-body">
                 <div class="experience-header">
                     <h3 class="experience-role">${job.title || ''}</h3>
                     <span class="experience-period">${job.period || ''}</span>
@@ -147,6 +164,7 @@ async function loadExperience() {
                 ${job.description ? `<p class="experience-description">${job.description}</p>` : ''}
                 ${points.length ? `<ul class="experience-points">${points.map(p => `<li>${p}</li>`).join('')}</ul>` : ''}
                 ${tech.length ? `<div class="experience-tech">${tech.map(t => `<span>${t}</span>`).join('')}</div>` : ''}
+                </div>
             </article>`;
         }).join('');
     } catch (error) {
