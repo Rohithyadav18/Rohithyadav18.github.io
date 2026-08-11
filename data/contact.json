@@ -1,0 +1,19 @@
+{
+  "sectionTitle": "Let's Create Something Amazing",
+  "subtitle": "Have a project in mind? Let's bring it to life together.",
+  "email": "rohithmogiligolla88@gmail.com",
+  "location": "Chicago, IL",
+  "availability": "Open to opportunities",
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "url": "http://www.linkedin.com/in/%20rohith-yadav-cs",
+      "icon": "fab fa-linkedin-in"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:rohithmogiligolla88@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

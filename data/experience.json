@@ -1,0 +1,48 @@
+{
+  "_instructions": "Add your work experience here. Copy the experience object for each job.",
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Marketing Analyst",
+      "company": "PepsiCo",
+      "period": "Feb 2026 – Present",
+      "location": "",
+      "description": "Built live GA4 and BigQuery dashboard tracking 500K daily active users, revenue, conversion funnel, and channel attribution with 5-minute refresh rate. Identified that mobile traffic was 62% of volume but only 34% of revenue, directing optimization efforts to high-intent segments.\nEngineered automated anomaly detection system flagging traffic drops exceeding 15% or conversion spikes exceeding 25% per channel within 5 minutes. Reduced incident response time from 4 hours to 15 minutes, enabling faster paid media budget reallocation.\nAnalyzed 6-month dataset across 12 traffic sources and discovered email-sourced users had 4.1x higher repeat purchase rate versus paid search users. Informed email budget increase by $320K annually based on this finding.\nAutomated daily performance report delivery to 8 executives via Looker Studio with PDF exports. Replaced 90-minute manual Excel reporting with 10-minute automated refresh, freeing 7 hours per week for strategic analysis.\nImplemented breakdown analysis by device, geography, and audience segment. Revealed iOS users converted at 2.3x rate of Android users. Recommended iOS-focused paid social budget shift with projected 18% incremental mobile revenue.\nBuilt predictive revenue dashboard calculating daily run-rate projections versus monthly targets. Flagged 3 days in advance when pacing would miss forecast by over 5%, enabling real-time budget rebalancing and $180K revenue recovery.\nCreated drill-down capability from high-level KPIs to individual campaign performance. Discovered 3 underperforming Google Ads campaigns with CPA 28% above target. Prompted keyword pruning and bid adjustments yielding 16% CPA reduction.",
+      "responsibilities": [
+        "Built live GA4 and BigQuery dashboard tracking 500K daily active users, revenue, conversion funnel, and channel attribution with 5-minute refresh rate",
+        "Identified that mobile traffic was 62% of volume but only 34% of revenue, directing optimization efforts to high-intent segments",
+        "Engineered automated anomaly detection system flagging traffic drops exceeding 15% or conversion spikes exceeding 25% per channel within 5 minutes",
+        "Reduced incident response time from 4 hours to 15 minutes, enabling faster paid media budget reallocation",
+        "Analyzed 6-month dataset across 12 traffic sources and discovered email-sourced users had 4",
+        "1x higher repeat purchase rate versus paid search users",
+        "Informed email budget increase by $320K annually based on this finding",
+        "Automated daily performance report delivery to 8 executives via Looker Studio with PDF exports",
+        "Replaced 90-minute manual Excel reporting with 10-minute automated refresh, freeing 7 hours per week for strategic analysis",
+        "Implemented breakdown analysis by device, geography, and audience segment",
+        "Revealed iOS users converted at 2",
+        "3x rate of Android users",
+        "Recommended iOS-focused paid social budget shift with projected 18% incremental mobile revenue",
+        "Built predictive revenue dashboard calculating daily run-rate projections versus monthly targets",
+        "Flagged 3 days in advance when pacing would miss forecast by over 5%, enabling real-time budget rebalancing and $180K revenue recovery",
+        "Created drill-down capability from high-level KPIs to individual campaign performance",
+        "Discovered 3 underperforming Google Ads campaigns with CPA 28% above target",
+        "Prompted keyword pruning and bid adjustments yielding 16% CPA reduction"
+      ]
+    },
+    {
+      "title": "Marketing Analyst",
+      "company": "Mphasis",
+      "period": "Mar 2021 – Jul 2022",
+      "location": "",
+      "description": "Analyzed marketing performance across Google Ads, Meta Ads, LinkedIn Ads, and Email using SQL, Excel, and Power BI, identifying channel optimization opportunities that reduced Customer Acquisition Cost by 14% while improving qualified lead generation by 17%.\nDeveloped RFM customer segmentation models using SQL for 6,500+ customer records, identifying high-value customer segments that generated 49% of total revenue and supporting targeted retention campaigns.\nConducted marketing funnel analysis across website visits, lead forms, MQLs, SQLs, and conversions, identifying a 42% drop off between MQL and SQL stages and recommending lead nurturing workflows projected to increase conversion rates by 11%.\nPerformed cohort retention analysis using SQL and Excel across 12 monthly cohorts, identifying engagement trends and recommending targeted campaigns that improved repeat customer engagement by 16%.\nBuilt interactive Power BI dashboards tracking ROAS, CAC, CPL, CTR, Conversion Rate, and CLV, reducing manual reporting by 70% and enabling self-service analytics.\nAutomated campaign performance reporting using SQL and Power Query, reducing report generation time from 5 hours to under 1 hour while improving reporting accuracy.",
+      "responsibilities": [
+        "Analyzed marketing performance across Google Ads, Meta Ads, LinkedIn Ads, and Email using SQL, Excel, and Power BI, identifying channel optimization opportunities that reduced Customer Acquisition Cost by 14% while improving qualified lead generation by 17%",
+        "Developed RFM customer segmentation models using SQL for 6,500+ customer records, identifying high-value customer segments that generated 49% of total revenue and supporting targeted retention campaigns",
+        "Conducted marketing funnel analysis across website visits, lead forms, MQLs, SQLs, and conversions, identifying a 42% drop off between MQL and SQL stages and recommending lead nurturing workflows projected to increase conversion rates by 11%",
+        "Performed cohort retention analysis using SQL and Excel across 12 monthly cohorts, identifying engagement trends and recommending targeted campaigns that improved repeat customer engagement by 16%",
+        "Built interactive Power BI dashboards tracking ROAS, CAC, CPL, CTR, Conversion Rate, and CLV, reducing manual reporting by 70% and enabling self-service analytics",
+        "Automated campaign performance reporting using SQL and Power Query, reducing report generation time from 5 hours to under 1 hour while improving reporting accuracy"
+      ]
+    }
+  ]
+}

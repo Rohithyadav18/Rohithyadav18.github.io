@@ -1,0 +1,24 @@
+{
+  "_instructions": "Add your education and certifications here.",
+  "sectionTitle": "Education & Certifications",
+  "certificationsTitle": "Certifications",
+  "education": [
+    {
+      "degree": "Master of Science",
+      "school": "Governors state university",
+      "institution": "Governors state university",
+      "period": "Dec 2025",
+      "details": "",
+      "description": ""
+    },
+    {
+      "degree": "B.Tech",
+      "school": "Jawaharlal Nehru Technological University Hyderabad Kukatpally",
+      "institution": "Jawaharlal Nehru Technological University Hyderabad Kukatpally",
+      "period": "Sep 2023",
+      "details": "",
+      "description": ""
+    }
+  ],
+  "certifications": []
+}

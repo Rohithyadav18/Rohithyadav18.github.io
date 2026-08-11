@@ -1,0 +1,18 @@
+{
+  "_instructions": "Site-wide configuration and meta tags. Update these values for SEO and branding.",
+  "meta": {
+    "title": "Rohith Mogili Golla | Marketing Analyst",
+    "description": "Rohith Mogili Golla - Marketing Analyst | Portfolio",
+    "author": "Rohith Mogili Golla",
+    "keywords": "Marketing Analyst, Portfolio, Rohith Mogili Golla"
+  },
+  "branding": {
+    "name": "Rohith Mogili Golla",
+    "tagline": "Marketing Analyst"
+  },
+  "settings": {
+    "year": 2026,
+    "enableAnimations": true,
+    "navbarScrollEffect": true
+  }
+}
