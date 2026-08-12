@@ -1,20 +1,22 @@
 {
   "_instructions": "Add your education and certifications here.",
-  "sectionTitle": "Education & Certifications",
+  "sectionTitle": "Education",
   "certificationsTitle": "Certifications",
   "education": [
     {
-      "degree": "Master of Science",
-      "school": "Governors state university",
-      "institution": "Governors state university",
+      "degree": "Master of Science in Computer Science",
+      "school": "Governors State University",
+      "institution": "Governors State University",
+      "location": "University Park, IL",
       "period": "Dec 2025",
       "details": "",
       "description": ""
     },
     {
-      "degree": "B.Tech",
-      "school": "Jawaharlal Nehru Technological University Hyderabad Kukatpally",
-      "institution": "Jawaharlal Nehru Technological University Hyderabad Kukatpally",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "school": "Jawaharlal Nehru Technological University, Hyderabad",
+      "institution": "Jawaharlal Nehru Technological University, Hyderabad",
+      "location": "Hyderabad, India",
       "period": "Sep 2023",
       "details": "",
       "description": ""

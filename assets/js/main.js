@@ -30,9 +30,10 @@ async function initializeApp() {
 async function loadSiteConfig() {
     try {
         const data = await fetch('data/site-config.json').then(r => r.json());
-        document.title = data.title;
-        document.querySelector('meta[name="description"]').content = data.description;
-        document.querySelector('meta[name="author"]').content = data.author;
+        const meta = data.meta || data;
+        document.title = meta.title || 'Portfolio';
+        document.querySelector('meta[name="description"]').content = meta.description || '';
+        document.querySelector('meta[name="author"]').content = meta.author || '';
     } catch (error) {
         console.error('Error loading site config:', error);
     }
@@ -238,8 +239,32 @@ async function loadSkills() {
 async function loadEducation() {
     try {
         const data = await fetch('data/education.json').then(r => r.json());
-        // Education section rendering - template may not display this
-        console.log('Education data loaded (not displayed in this template):', data);
+        const list = document.getElementById('education-list');
+        const section = document.getElementById('education');
+        if (!list) return;
+
+        const items = Array.isArray(data.education) ? data.education : [];
+        if (!items.length) { if (section) section.style.display = 'none'; return; }
+
+        const titleEl = document.getElementById('education-title');
+        if (titleEl && data.sectionTitle) titleEl.textContent = data.sectionTitle;
+
+        list.innerHTML = items.map(ed => {
+            const school = ed.school || ed.institution || '';
+            const loc = ed.location || '';
+            return `
+            <article class="education-item">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="education-body">
+                    <div class="education-header">
+                        <h3 class="education-degree">${ed.degree || ''}</h3>
+                        <span class="education-period">${ed.period || ''}</span>
+                    </div>
+                    <p class="education-school">${school}${loc ? ` <span>· ${loc}</span>` : ''}</p>
+                    ${ed.description ? `<p class="education-description">${ed.description}</p>` : ''}
+                </div>
+            </article>`;
+        }).join('');
     } catch (error) {
         console.error('Error loading education:', error);
     }
@@ -252,6 +277,7 @@ async function loadContact() {
         document.getElementById('contact-subtitle').textContent = data.subtitle;
         document.getElementById('contact-info').innerHTML = `
             <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:${data.email}">${data.email}</a></div>
+            ${data.phone ? `<div class="contact-item"><i class="fas fa-phone"></i> <a href="tel:${data.phone.replace(/[^+\d]/g, '')}">${data.phone}</a></div>` : ''}
             <div class="contact-item"><i class="fas fa-map-marker-alt"></i> ${data.location}</div>
             <div class="contact-item"><i class="fas fa-clock"></i> ${data.availability}</div>
         `;
@@ -269,7 +295,7 @@ async function loadFooter() {
         document.getElementById('footer-text').textContent = data.text;
         document.getElementById('footer-copyright').textContent = data.copyright;
         document.getElementById('footer-links').innerHTML = data.links.map(link =>
-            `<a href="${link.href}">${link.text}</a>`
+            `<a href="${link.url || link.href}" target="_blank" rel="noopener">${link.text}</a>`
         ).join('');
     } catch (error) {
         console.error('Error loading footer:', error);

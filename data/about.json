@@ -2,24 +2,24 @@
   "_instructions": "About section content - tell your professional story and showcase key metrics.",
   "sectionTitle": "About Me",
   "content": [
-    "Experienced Marketing Analyst with 2+ years of experience leveraging data analytics to optimize marketing performance, customer acquisition, and revenue growth across retail and e-commerce environments. Expertise in analyzing large-scale customer and marketing datasets using SQL, Google BigQuery, GA4, Power BI, and Looker Studio to deliver actionable insights, executive dashboards, and predictive analytics. Proven succe",
-    "ss in marketing attribution, customer segmentation, funnel optimization, cohort analysis, retention analytics, revenue forecasting, and campaign performance measurement. Experienced in automating reporting, building scalable BI solutions, identifying growth opportunities, and partnering with cross-functional teams to improve marketing ROI, customer engagement, and business performance through data driven decision-making."
+    "Experienced Marketing Analyst with 2+ years of experience leveraging data analytics to optimize marketing performance, customer acquisition, and revenue growth across retail and e-commerce environments. I analyze large-scale customer and marketing datasets using SQL, Google BigQuery, GA4, Power BI, and Looker Studio to deliver actionable insights, executive dashboards, and predictive analytics.",
+    "Proven success in marketing attribution, customer segmentation, funnel optimization, cohort analysis, retention analytics, revenue forecasting, and campaign performance measurement. I automate reporting, build scalable BI solutions, identify growth opportunities, and partner with cross-functional teams to improve marketing ROI, customer engagement, and business performance through data-driven decision-making."
   ],
   "highlights": [
     {
       "icon": "fas fa-briefcase",
       "title": "2+",
-      "description": "Companies"
+      "description": "Years of Experience"
     },
     {
-      "icon": "fas fa-project-diagram",
-      "title": "0+",
-      "description": "Project"
+      "icon": "fas fa-building",
+      "title": "2",
+      "description": "Companies (PepsiCo, Mphasis)"
     },
     {
-      "icon": "fas fa-code",
-      "title": "58+",
-      "description": "Skills"
+      "icon": "fas fa-graduation-cap",
+      "title": "MS",
+      "description": "Computer Science"
     }
   ]
 }
