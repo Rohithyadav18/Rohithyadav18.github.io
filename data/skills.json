@@ -4,96 +4,73 @@
   "sectionTitle": "Skills & Technologies",
   "categories": [
     {
-      "category": "Programming Languages",
+      "name": "Analytics & Programming",
       "icon": "fas fa-code",
       "skills": [
         "SQL",
         "Python (Pandas, NumPy)",
-        "LookML"
+        "LookML",
+        "Statistical Analysis",
+        "A/B Testing & Experimentation",
+        "Query Optimization"
       ]
     },
     {
-      "category": "Tools & Platforms",
-      "icon": "fas fa-wrench",
+      "name": "BI & Data Visualization",
+      "icon": "fas fa-chart-line",
       "skills": [
         "Power BI",
-        "Looker Studio",
         "Tableau",
+        "Looker Studio",
+        "Interactive Dashboards",
+        "KPI Scorecards",
+        "Executive Reporting",
+        "Data Storytelling",
+        "Report Automation"
+      ]
+    },
+    {
+      "name": "Marketing Analytics",
+      "icon": "fas fa-bullhorn",
+      "skills": [
+        "Marketing Attribution",
+        "Multi-Touch Attribution",
+        "Funnel Analysis",
+        "Conversion Rate Optimization (CRO)",
+        "Campaign Performance Analysis",
+        "Marketing ROI",
+        "Channel Performance Analysis",
+        "Marketing Mix Modeling (MMM)"
+      ]
+    },
+    {
+      "name": "Customer Analytics",
+      "icon": "fas fa-users",
+      "skills": [
+        "RFM Segmentation",
+        "Cohort Analysis",
+        "Retention Analysis",
+        "Customer Lifetime Value (CLV)",
+        "Customer Journey Analytics",
+        "Predictive Analytics",
+        "Revenue Forecasting"
+      ]
+    },
+    {
+      "name": "Data Platforms & Tools",
+      "icon": "fas fa-database",
+      "skills": [
         "Google BigQuery",
-        "Microsoft Excel",
-        "Power Query",
         "Google Analytics 4 (GA4)",
         "Google Tag Manager (GTM)",
-        "Google Search Console",
         "Adobe Analytics",
         "Mixpanel",
         "Amplitude",
         "Snowflake",
-        "dbt"
-      ]
-    },
-    {
-      "category": "Technical Skills",
-      "icon": "fas fa-laptop-code",
-      "skills": [
-        "Marketing Performance Analysis",
-        "Digital Marketing Analytics",
-        "Customer Acquisition Analytics",
-        "Campaign Performance Analysis",
-        "Marketing Attribution",
-        "Multi-Touch Attribution",
-        "Customer Journey Analytics",
-        "Funnel Analysis",
-        "Conversion Rate Optimization (CRO)",
-        "Cohort Analysis",
-        "Retention Analysis",
-        "Customer Lifetime Value (CLV)",
-        "RFM Segmentation",
-        "Marketing Mix Analysis (MMM)",
-        "Incrementality Analysis",
-        "A/B Testing",
-        "Experimentation",
-        "Marketing ROI",
-        "Channel Performance Analysis",
-        "Customer Insights",
-        "Interactive Dashboard Development",
-        "KPI Scorecards",
-        "Executive Reporting",
-        "Self-Service Analytics",
-        "Data Storytelling",
-        "Report Automation",
-        "Data Visualization",
+        "dbt",
+        "Excel / Power Query",
         "Data Modeling",
-        "Data Cleaning",
-        "Data Validation",
-        "Statistical Analysis",
-        "Trend Analysis",
-        "Revenue Forecasting",
-        "Predictive Analytics",
-        "Anomaly Detection",
-        "Root Cause Analysis",
-        "Performance Monitoring",
-        "Business Performance Analysis",
-        "Event Tracking",
-        "User Behavior Analytics",
-        "Conversion Tracking",
-        "Joins",
-        "CTEs",
-        "Window Functions",
-        "Aggregate Functions",
-        "Query Optimization",
-        "Data Warehousing",
-        "ETL Concepts",
-        "Stakeholder Management",
-        "Cross-Functional Collaboration",
-        "Strategic Decision Support",
-        "Business Intelligence",
-        "Process Automation",
-        "Performance Optimization",
-        "Data-Driven Decision Making",
-        "Executive Communication",
-        "Business Insights",
-        "Problem Solving"
+        "ETL Concepts"
       ]
     }
   ]

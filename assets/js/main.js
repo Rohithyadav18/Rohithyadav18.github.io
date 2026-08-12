@@ -109,7 +109,7 @@ async function loadHero() {
             const highlights = data.highlights || data.stats || [];
             statsElement.innerHTML = highlights.map(item => {
                 // Support both formats
-                const number = item.number || item.text || '';
+                const number = item.number || item.value || item.text || '';
                 const label = item.label || '';
                 return `<div class="stat-item"><span class="stat-number">${number}</span><span class="stat-label">${label}</span></div>`;
             }).join('');
@@ -182,6 +182,13 @@ async function loadProjects() {
         const workGrid = document.getElementById('work-grid');
         const projects = data.projects || data.items || [];
 
+        // Hide the whole Work section when there are no projects
+        const workSection = document.getElementById('work');
+        if (!projects.length) {
+            if (workSection) workSection.style.display = 'none';
+            return;
+        }
+
         if (workGrid && projects.length > 0) {
             workGrid.innerHTML = projects.map(project => {
                 // Support both "technologies" and "tags"
@@ -214,8 +221,8 @@ async function loadSkills() {
         document.getElementById('skills-grid').innerHTML = data.categories.map(cat =>
             `<div class="skill-category">
                 <div class="skill-category-header">
-                    <i class="${cat.icon}"></i>
-                    <h3 class="skill-category-name">${cat.name}</h3>
+                    <i class="${cat.icon || 'fas fa-star'}"></i>
+                    <h3 class="skill-category-name">${cat.name || cat.category || ''}</h3>
                 </div>
                 <div class="skill-list">
                     ${cat.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}

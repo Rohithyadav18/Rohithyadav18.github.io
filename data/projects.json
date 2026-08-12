@@ -2,35 +2,5 @@
   "_instructions": "Add your professional projects.",
   "sectionTitle": "Portfolio",
   "subtitle": "Featured professional projects",
-  "projects": [
-    {
-      "title": "Netflixclone",
-      "description": "A Netflix clone project is a web-based application that replicates the core features of the Netflix streaming platform",
-      "longDescription": "A Netflix clone project is a web-based application that replicates the core features of the Netflix streaming platform",
-      "category": "Data Science",
-      "technologies": [
-        "HTML",
-        "CSS"
-      ],
-      "icon": "fas fa-brain",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&q=80&fit=crop",
-      "featured": true,
-      "status": "Completed",
-      "role": "Lead Developer",
-      "duration": "",
-      "client": "",
-      "github": "https://github.com/Rohithyadav18/Netflixclone",
-      "demo": "https://github.com/Rohithyadav18/Netflixclone",
-      "links": {
-        "github": "https://github.com/Rohithyadav18/Netflixclone",
-        "demo": "https://github.com/Rohithyadav18/Netflixclone",
-        "live": "https://github.com/Rohithyadav18/Netflixclone"
-      },
-      "metrics": {
-        "users": "",
-        "performance": "",
-        "impact": ""
-      }
-    }
-  ]
+  "projects": []
 }
