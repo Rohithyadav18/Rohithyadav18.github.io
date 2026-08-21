@@ -1,6 +1,67 @@
 {
-  "_instructions": "Add your professional projects.",
-  "sectionTitle": "Portfolio",
-  "subtitle": "Featured professional projects",
-  "projects": []
+  "_instructions": "Projects sourced from GitHub (github.com/Rohithyadav18), curated for the Marketing Analyst / Data Analytics domain.",
+  "sectionTitle": "Featured Projects",
+  "subtitle": "Selected data & analytics work from my GitHub",
+  "projects": [
+    {
+      "title": "Multi-Source Marketing Analytics",
+      "description": "Unified marketing analytics workspace that consolidates multiple channels into a single attribution and channel-performance view - the kind of cross-source reporting I build day to day.",
+      "category": "Marketing Analytics",
+      "technologies": ["GA4", "BigQuery", "SQL", "HTML"],
+      "icon": "fas fa-bullhorn",
+      "image": "assets/images/projects/marketing-analytics.svg",
+      "github": "https://github.com/Rohithyadav18/multi-source-marketing-analytics",
+      "demo": "https://github.com/Rohithyadav18/multi-source-marketing-analytics"
+    },
+    {
+      "title": "Customer Churn Prediction",
+      "description": "Machine-learning model that flags at-risk customers from behavioural and transaction data, enabling targeted retention campaigns before customers leave.",
+      "category": "Predictive Analytics",
+      "technologies": ["Python", "Pandas", "scikit-learn"],
+      "icon": "fas fa-users-slash",
+      "image": "assets/images/projects/churn.svg",
+      "github": "https://github.com/Rohithyadav18/customer-churn-prediction",
+      "demo": "https://github.com/Rohithyadav18/customer-churn-prediction"
+    },
+    {
+      "title": "Online Payments Fraud Detection",
+      "description": "Classification model that detects fraudulent online-payment transactions using feature engineering and imbalanced-data techniques on a large transaction dataset.",
+      "category": "Machine Learning",
+      "technologies": ["Python", "scikit-learn", "Jupyter"],
+      "icon": "fas fa-shield-halved",
+      "image": "assets/images/projects/fraud.svg",
+      "github": "https://github.com/Rohithyadav18/online-payments-fraud-detection-with-machine-learning",
+      "demo": "https://github.com/Rohithyadav18/online-payments-fraud-detection-with-machine-learning"
+    },
+    {
+      "title": "Grocery Retail Prediction & Recommendation",
+      "description": "Demand-prediction and product-recommendation engine for online grocery retail, modelling purchase patterns to lift basket size and repeat purchase.",
+      "category": "Retail Analytics",
+      "technologies": ["Python", "Pandas", "scikit-learn"],
+      "icon": "fas fa-basket-shopping",
+      "image": "assets/images/projects/retail.svg",
+      "github": "https://github.com/Rohithyadav18/online-grocery-retail---prediction-and-recommendation",
+      "demo": "https://github.com/Rohithyadav18/online-grocery-retail---prediction-and-recommendation"
+    },
+    {
+      "title": "Enhanced Anomaly Detection System",
+      "description": "Automated anomaly-detection system that flags traffic and conversion irregularities in real time - the same alerting concept I productionised at PepsiCo.",
+      "category": "Analytics Engineering",
+      "technologies": ["Python", "Time Series", "Statistics"],
+      "icon": "fas fa-wave-square",
+      "image": "assets/images/projects/anomaly.svg",
+      "github": "https://github.com/Rohithyadav18/enhanced-anomaly-detection-system",
+      "demo": "https://github.com/Rohithyadav18/enhanced-anomaly-detection-system"
+    },
+    {
+      "title": "Data Science Salary Estimator",
+      "description": "End-to-end regression project - data collection, cleaning, EDA and modelling - that estimates data-science compensation from role, skills and location.",
+      "category": "Data Science",
+      "technologies": ["Python", "Pandas", "scikit-learn"],
+      "icon": "fas fa-chart-line",
+      "image": "assets/images/projects/salary.svg",
+      "github": "https://github.com/Rohithyadav18/ds_salary_proj",
+      "demo": "https://github.com/Rohithyadav18/ds_salary_proj"
+    }
+  ]
 }

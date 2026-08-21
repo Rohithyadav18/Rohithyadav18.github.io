@@ -194,8 +194,11 @@ async function loadProjects() {
             workGrid.innerHTML = projects.map(project => {
                 // Support both "technologies" and "tags"
                 const tags = project.technologies || project.tags || [];
+                const link = project.github || project.demo || project.link || (project.links && (project.links.github || project.links.live));
+                const cardTag = link ? 'a' : 'div';
+                const linkAttrs = link ? ` href="${link}" target="_blank" rel="noopener"` : '';
 
-                return `<div class="work-card">
+                return `<${cardTag} class="work-card"${linkAttrs}>
                     <div class="work-image" style="background-image: url('${project.image}')">
                         <div class="work-icon"><i class="${project.icon}"></i></div>
                     </div>
@@ -206,8 +209,9 @@ async function loadProjects() {
                         <div class="work-tags">
                             ${tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
+                        ${link ? `<span class="work-link"><i class="fab fa-github"></i> View on GitHub</span>` : ''}
                     </div>
-                </div>`;
+                </${cardTag}>`;
             }).join('');
         }
     } catch (error) {

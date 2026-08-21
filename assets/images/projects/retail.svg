@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#14532D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <rect width="600" height="400" fill="url(#grid)"/>
+  <rect width="600" height="400" fill="url(#glow)"/>
+  
+  <g fill="#34D399" fill-opacity="0.85">
+    <rect x="410" y="150" width="34" height="34" rx="5"/><rect x="452" y="150" width="34" height="34" rx="5"/>
+    <rect x="494" y="150" width="34" height="34" rx="5"/>
+    <rect x="410" y="192" width="34" height="34" rx="5"/><rect x="452" y="192" width="34" height="34" rx="5"/>
+    <rect x="494" y="192" width="34" height="34" rx="5"/>
+  </g>
+  <g fill="none" stroke="#6EE7B7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.95">
+    <path d="M70 130 H104 L134 250 H236 L262 168 H120"/>
+  </g>
+  <g fill="#6EE7B7" fill-opacity="0.95">
+    <circle cx="140" cy="290" r="14"/><circle cx="226" cy="290" r="14"/>
+  </g>
+  <g stroke="#34D399" stroke-width="4" fill="none" stroke-opacity="0.5">
+    <polyline points="70,340 160,320 250,332 340,300 430,314 530,286"/>
+  </g>
+
+  <rect x="0" y="392" width="600" height="8" fill="#34D399" fill-opacity="0.9"/>
+</svg>
